@@ -1,0 +1,15 @@
+.btn-grou{
+    margin-top: 20px;
+}
+.btn{
+    margin-left: 20px;
+    border-radius: 50px 50px ;
+    outline: none  !important;
+    border: none;
+    background-color: #6053C9;
+    color: white;
+}
+.active{
+    background-color: #0A2F92 !important;
+    color: white !important;
+}
