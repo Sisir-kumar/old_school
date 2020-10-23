@@ -11,15 +11,25 @@ useEffect(()=>{
     const filterboard = filterdata.map(a=> a.boards )
     const{CBSE,ICSE ,Advance_Level,NTSE,JEE_Main_A,JEE_Main}=filterboard[0]
     if(board=='CBSE'){
-        setAlldata(CBSE)
+        if(CBSE){
+         setAlldata(CBSE)
+        }
      }else if(board=="ICSE"){
-         setAlldata(ICSE)
+         if(ICSE){
+            setAlldata(ICSE)
+         }
      }else if(board==='Advance_Level'){
-          setAlldata(Advance_Level)
+          if(Advance_Level){
+            setAlldata(Advance_Level)
+          }
      }else if(board=="JEE_Main"){
-          setAlldata(JEE_Main)
+         if(JEE_Main){
+            setAlldata(JEE_Main)
+         }
      }else{
-         setAlldata(JEE_Main_A)
+         if(JEE_Main_A){
+            setAlldata(JEE_Main_A)
+         }
      }
         
 },[gradeoption,board])
